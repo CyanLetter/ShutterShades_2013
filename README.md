@@ -1,5 +1,7 @@
 # Shutter Shades
 
+[cyanletter.github.io/ShutterShades_2013](https://cyanletter.github.io/ShutterShades_2013/)
+
 I built this portfolio in my senior year of art school at Western Carolina University. It landed me my first job at a design studio.
 
 Back when I thought jQuery was synonymous with javascript.
