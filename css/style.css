@@ -1,0 +1,347 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('../fonts/League_Gothic-webfont.eot');
+    src: url('../fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/League_Gothic-webfont.woff') format('woff'),
+         url('../fonts/League_Gothic-webfont.ttf') format('truetype'),
+         url('../fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html, body {
+	background: #51D632;
+	height: 100%;
+	font-family: 'LeagueGothicRegular', Helvetica, Arial, sans-serif;
+	overflow: hidden;
+}
+#skunk {
+	background-image: url('../img/pinkbar01b.png');
+	width: 100%;
+	position: absolute;
+	top: 380px;
+	height: 100%;
+}
+a:link {
+	text-decoration: none;
+	color: #0FD2F2;
+	-o-transition:.15s;
+	-ms-transition:.15s;
+	-moz-transition:.15s;
+	-webkit-transition:.15s;
+	transition:.15s;
+}
+a:hover {
+	text-decoration: none;
+	color: #EC3292;
+}
+a:active {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #0FD2F2;
+}
+a img{
+	border: 0;
+}
+/* ===== HEADER ===== */
+#header {
+	width: 100%;
+	height: 30px;
+	padding: 5px 0 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	font-size: 1.5em;
+	z-index: 1200;
+	background-color: #fff;
+	/*box-shadow: 1px 1px 3px 0px #cfffff;*/
+}
+#interactive, #about, #home, #print, #motion {
+
+}
+.topnav {
+	color: #0FD2F2;
+	float: left;
+	cursor: pointer;
+	width: 20%;
+	text-align: center;
+}
+/* ===== NAV BARS ===== */
+.navbars {
+	position: fixed;
+	top: 35px;
+	left: 0px;
+	height: 115px;
+	width: 100%;
+	padding: 10px;
+	background-color: #fff;
+	display: none;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 0.8em;
+}
+.navbars ul {
+	display: inline; 
+	width: auto;
+	margin: 0px auto; 
+	list-style: none; 
+	text-align: center;
+	white-space: nowrap;
+	overflow: auto;
+}
+
+.navbars li {
+  display: inline;
+  margin: 0px 20px;
+  white-space: nowrap;
+}
+.navbars li img{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+}
+#aboutpanel {
+	background-color: #fff;
+}
+#printpanel {
+ 	background-color: #fff;
+}
+#motionpanel {
+	background-color: #fff;
+}
+#interactivepanel {
+	background-color: #fff;
+}
+#photopanel {
+	background-color: #fff;
+}
+#statement {
+	margin: 0 40px;
+	float: left;
+}
+#statement p{
+	max-width: 550px;
+	min-width: 200px;
+	text-align: left;
+}
+.colored {
+	background-color: #fff;
+}
+#copyright {
+	/*
+	float: right;
+	margin-right: 40px;
+	*/
+	position: absolute;
+	top: 80px;
+	right: 50px;
+	font-family: 'LeagueGothicRegular', Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	color: #0FD2F2;
+}
+/* ===== HUMAN HEAD ===== */
+.headwrapper {
+	width: 690px;
+	height: 100%;
+	position: relative;
+	margin: auto;
+	overflow: hidden;
+}
+.headwrapper div {
+	position: absolute;
+}
+#myhead {
+	width: 690px;
+	height: 100%;
+	background-image: url('../img/head03.png');
+	background-attachment:fixed;
+	background-position: 50% -50px;
+	background-repeat: no-repeat;
+}
+/* ===== SHUTTER SHADES ===== */
+#scanBars {
+	width: 500px;
+	height: 200px;
+	background-image: url('../img/pinkbar02b.png');
+	top: 172px;
+	left: 50%;
+	margin: 0 0 0 -250px;
+}
+#scanWords {
+	width: 475px;
+	height: 200px;
+	background-image: url('../img/LettersPink-MIPP01.png');
+	top: 200px;
+	left: 110px;
+}
+/* ===== ANATOMY ===== */
+#nose {
+	top: 370px;
+	left: 345px;
+}
+#leftear {
+	top: 400px;
+	left: 100px;
+}
+#rightear {
+	top: 390px;
+	right: 90px;
+}
+#mouth {
+	top: 510px;
+	left: 315px;
+}
+.facialhairbutton {
+	position: fixed;
+	background-image: url('../img/stache-icon-02.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 300px;
+	left: 20px;
+	cursor: pointer;
+}
+.facialhair {
+	position: absolute;
+	top: 400px;
+}
+#stache1 {
+	background-image: url('../img/facialhair01.png');
+	left: 134px;
+	width: 422px;
+	height: 158px;
+}
+#stache2 {
+	background-image: url('../img/facialhair02.png');
+	left: 205px;
+	width: 279px;
+	height: 365px;
+}
+#stache3 {
+	background-image: url('../img/facialhair03.png');
+	left: 191px;
+	top: 402px;
+	width: 308px;
+	height: 322px;
+}
+.circle {
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	-ms-border-radius: 20px;
+	background-color: #0FD2F2;
+	color: red;
+	margin: 10px;
+}
+.circle p{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+}
+/* ===== ANIMATION ===== */
+.circle:hover {
+	animation: pulsate 1s ease infinite;
+	-moz-animation: pulsate 1s ease infinite;
+	-webkit-animation: pulsate 1s ease infinite;
+	-o-animation: pulsate 1s ease infinite;
+	-ms-animation: pulsate 1s ease infinite;
+
+}
+
+@keyframes pulsate /* Safari and Chrome */
+{  
+0% {
+	width: 40px;height: 40px;
+	border-radius: 20px;
+	margin: 10px;
+}
+50% {
+	width: 60px; height: 60px; 
+	border-radius: 30px;
+	margin: 0px;}
+100% {
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	margin: 10px;}
+}
+@-webkit-keyframes pulsate /* Safari and Chrome */
+{  
+0% {
+	width: 40px;
+	height: 40px;
+	-webkit-border-radius: 20px;
+	margin: 10px;}
+50% {
+	width: 60px; 
+	height: 60px;
+	 -webkit-border-radius: 30px;
+	 margin: 0px;}
+100% {
+	width: 40px;
+	height: 40px;
+	-webkit-border-radius: 20px;
+	margin: 10px;}
+}
+@-moz-keyframes pulsate /* Safari and Chrome */
+{  
+0% {
+	width: 40px;
+	height: 40px;
+	-moz-border-radius: 20px;
+	margin: 10px;}
+50% {
+	width: 60px; 
+	height: 60px;
+	 -moz-border-radius: 30px;
+	 margin: 0px;}
+100% {
+	width: 40px;
+	height: 40px;
+	-moz-border-radius: 20px;
+	margin: 10px;}
+}
+@-o-keyframes pulsate /* Safari and Chrome */
+{  
+0% {
+	width: 40px;
+	height: 40px;
+	-o-border-radius: 20px;
+	margin: 10px;}
+50% {
+	width: 60px; 
+	height: 60px;
+	 -o-border-radius: 30px;
+	 margin: 0px;}
+100% {
+	width: 40px;
+	height: 40px;
+	-o-border-radius: 20px;
+	margin: 10px;}
+}
+0% {
+	width: 40px;
+	height: 40px;
+	-ms-border-radius: 20px;
+	margin: 10px;}
+50% {
+	width: 60px; 
+	height: 60px;
+	 -ms-border-radius: 30px;
+	 margin: 0px;}
+100% {
+	width: 40px;
+	height: 40px;
+	-ms-border-radius: 20px;
+	margin: 10px;}
+}

@@ -1,0 +1,7 @@
+body{background:#111;font-family:Verdana, Helvetica, Arial, sans-serif;margin:0;padding:0}
+.examples{background:#FFF;width:800px;font-size:80%;border:1px #000 solid;margin: auto ;padding:0;}
+
+#my_ecard {position:relative; overflow:hidden; width:800px; height:600px;}
+
+h1 {display: block; position: absolute; top: 2000px; left: 500px}
+x {display: block; position: absolute; top: 1000px; left: 200px}

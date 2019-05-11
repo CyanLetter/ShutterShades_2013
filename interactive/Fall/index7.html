@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Scrolly!</title>
+<script>
+
+// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+
+//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+//** Call: uniquevar.playclip() to play sound
+
+var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+	"mp3": "audio/mpeg",
+	"mp4": "audio/mp4",
+	"ogg": "audio/ogg",
+	"wav": "audio/wav"
+}
+
+function createsoundbite(sound){
+	var html5audio=document.createElement('audio')
+	if (html5audio.canPlayType){ //check support for HTML5 audio
+		for (var i=0; i<arguments.length; i++){
+			var sourceel=document.createElement('source')
+			sourceel.setAttribute('src', arguments[i])
+			if (arguments[i].match(/\.(\w+)$/i))
+				sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+			html5audio.appendChild(sourceel)
+		}
+		html5audio.load()
+		html5audio.playclip=function(){
+			html5audio.pause()
+			html5audio.currentTime=0
+			html5audio.play()
+		}
+		return html5audio
+	}
+	else{
+		return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio")}}
+	}
+}
+
+//Initialize sound clips with (ideally) 1 fallback file each:
+
+var boom=createsoundbite("USAT.mp3")
+var bottle=createsoundbite("sound/bottle.ogg", "sound/bottle.mp3")
+var chime=createsoundbite("sound/chime.ogg","sound/chime.mp3")
+var always=createsoundbite("sound/always.ogg","sound/always.mp3")
+var bark=createsoundbite("sound/bark.ogg","sound/bark.mp3")
+var birdie=createsoundbite("sound/birdie.ogg","sound/birdie.mp3")
+var cough=createsoundbite("sound/cough.ogg","sound/cough.mp3")
+var horn=createsoundbite("sound/horn.ogg","sound/horn.mp3")
+var kick2=createsoundbite("sound/kick2.ogg","sound/kick2.mp3")
+var nogod=createsoundbite("sound/nogod.ogg","sound/nogod.mp3")
+var phone1=createsoundbite("sound/phone1.ogg","sound/phone1.mp3")
+var phone2=createsoundbite("sound/phone2.ogg","sound/phone2.mp3")
+var gunload=createsoundbite("sound/reload.ogg","sound/reload.mp3")
+var scream=createsoundbite("sound/scream.ogg","sound/scream.mp3")
+var shotgun=createsoundbite("sound/shotgun.ogg","sound/shotgun.mp3")
+var siren=createsoundbite("sound/siren.ogg","sound/siren.mp3")
+var ticket=createsoundbite("sound/ticket.ogg","sound/ticket.mp3")
+var whistle=createsoundbite("sound/whistle.ogg","sound/whistle.mp3")
+var gunshot=createsoundbite("sound/gunshot2.ogg","sound/gunshot2.mp3")
+var breathing=createsoundbite("sound/breathing.ogg","sound/breathing.mp3")
+var chain=createsoundbite("sound/chain.ogg","sound/chain.mp3")
+var laugh=createsoundbite("sound/laugh.ogg","sound/laugh.mp3")
+var piano=createsoundbite("sound/piano.ogg","sound/piano.mp3")
+var whoosh=createsoundbite("sound/whoosh.ogg","sound/whoosh.mp3")
+//var clicksound=createsoundbite("click.ogg", "click.mp3")
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+body,td,th {
+	color: #EEE;
+}
+</style>
+</head>
+
+<body>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.jparallax.js"></script>
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+
+<p align="center"></p>
+
+<div class="examples">
+    <div id="my_ecard">
+    
+    <div style="width:3200px; height:9000px; position:relative;"> 
+			<img src="images/grunge2.png" alt="" style="width:800px;height:800px; display: block; position: absolute; top: 6000px; left: 300px" />
+            <img src="images/specter1.png" alt="" style="width:600px;height:1200px; display: block; position: absolute; top: 6000px; left: 2400px" />
+            <img src="images/mask3.png" alt="" style="width:1000px;height:1000px; display: block; position: absolute; top: 3200px; left: 000px" />
+            </div>
+    
+    <div style="width:900px; height: 6000px; position: relative;">
+    
+    <img src="images/man1.png" alt="" style="width:800px;height:800px; display: block; position: absolute; top: 5200px; left: 200px"/>
+    <img src="images/Speaker.png" alt="" style="width:800px;height:800px; display: block; position: absolute; top: 2000px; left: -500px" />
+    <img src="images/tree.png" alt="" style="width:1000px;height:1000px; display: block; position: absolute; top: 400px; left: 100px" />
+    
+    </div>
+    
+    <div style="width:1400px; height: 11000px; position: relative;">
+    
+    <img src="images/grunge1.png" alt="" style="width:800px;height:800px; display: block; position: absolute; top: 5500px; left: 400px" />
+    <img src="images/Smoke1.gif" alt="" style="width:1500px;height:5000px; display: block; position: absolute; top: 6000px; left: 000px" />
+    <img src="images/mask2.png" alt="" style="width:1000px;height:1000px; display: block; position: absolute; top: 5000px; left: 500px" />
+    <img src="images/whitesmoke1.png" alt="" style="width:1000px;height:1000px; display: block; position: absolute; top: 5400px; left: 100px" />
+    <img src="images/pointy.png" alt="" style="width:1000px;height:1000px; display: block; position: absolute; top: 9000px; left: -500px" />
+    <img src="images/man3.png" alt="" style="width:1000px;height:1000px; display: block; position: absolute; top: 800px; left: 300px" />
+    
+    </div>
+    
+<!-- <img src="images/ShadowValley.gif" alt="" style="width:1100px;height:4000px;"/> -->
+        <!--<img src="images/Cigarettes.png" alt="" style="width:2000px;height:4500px;"/>-->
+        <img src="images/Tallsmoke.png" alt="" style="width:1000px;height:8000px;"/>
+        <!--<img src="images/Shadows.png" alt="" style="width:1000px;height:6000px;"/>-->
+        
+    <div style="width:2000px; height: 12000px; position: relative;">
+    <img src="images/man2.png" alt="" style="width:800px;height:800px; display: block; position: absolute; top: 5700px; left: 1100px"/>
+    <img src="images/Leafthang1.png" alt="" style="width:800px;height:800px; display: block; position: absolute; top: 10700px; left: 600px" />
+    
+    <img src="images/mask1.png" alt="" style="width:800px;height:800px; display: block; position: absolute; top: 9000px; left: 300px" />
+    <img src="images/whitesmoke1.png" alt="" style="width:1000px;height:1000px; display: block; position: absolute; top: 5000px; left: 300px" />
+    <img src="images/specter2.png" alt="" style="width:600px;height:1200px; display: block; position: absolute; top: 8100px; left: 1300px" />
+    </div>
+    
+            
+	  <div style="width:1400px; height:4000px; position:relative;"> <!-- Sound files must always be the last div in the document -->
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 300px; left: 0px" onmouseover="birdie.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 800px; left: 0px" onmouseover="laugh.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 1100px; left: 0px" onmouseover="chime.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 1400px; left: 0px" onmouseover="whoosh.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 1700px; left: 0px" onmouseover="piano.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 2000px; left: 0px" onmouseover="always.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 2300px; left: 0px" onmouseover="whistle.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 2400px; left: 0px" onmouseover="bark.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 2450px; left: 0px" onmouseover="cough.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 2600px; left: 0px" onmouseover="phone2.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 2800px; left: 0px" onmouseover="bottle.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 2850px; left: 0px" onmouseover="breathing.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 2900px; left: 0px" onmouseover="chain.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 3000px; left: 0px" onmouseover="horn.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 2400px; left: 0px" onmouseover="phone1.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 3500px; left: 0px" onmouseover="kick2.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 3600px; left: 0px" onmouseover="nogod.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 3650px; left: 0px" onmouseover="siren.playclip()" />
+        <img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 3700px; left: 0px" onmouseover="gunload.playclip()" />
+   		<img src="images/SoundDummy.png" alt="" style="width:1400px;height:20px; display: block; position: absolute; top: 3800px; left: 0px" onmouseover="gunshot.playclip()" />
+         </div>
+    </div>
+    <div style="clear:both"></div>
+</div>
+
+<script>
+jQuery(document).ready(function(){
+  jQuery('#my_ecard').jparallax();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+
+<script type='text/javascript'>
+$(document).ready(function() {
+  $("#map").geomap();
+ });
+</script>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/jquery.geo-1.0b1.min.js"></script>
+
+<link rel="stylesheet" href="styles/nyroModal.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="js/jquery.nyroModal.custom.js"></script>
+<!--[if IE 6]>
+  <script type="text/javascript" src="js/jquery.nyroModal-ie6.min.js"></script>
+<![endif]-->
+
+ <script type="text/javascript">
+$(function() {
+  $('.label a').nyroModal();
+});
+</script>
+
+
+
+<style type="text/css">
+
+#header {
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	height: 70px; 
+	color: gold; 
+	background-color: darkred; 
+	z-index: 1;
+}
+
+.label {
+	width: 100px;
+	height: 20px;
+	padding: 0px 0px 0px 25px;
+	background-color: red;
+	color: gold;
+	border-radius: 10px 0 0 10px;
+  cursor: pointer;
+	position: relative;
+    left: -10px;
+    top: -10px;
+  z-index: 10000;
+}
+
+ul {
+	display: inline; 
+	margin: auto; 
+	list-style: none; 
+	text-align: center;
+}
+
+li {
+	display: inline;
+}
+
+</style>
+</head>
+<body>
+
+<div id="header" >
+	<ul >
+		<li >Venezia</li>
+		<li >Firenze</li>
+		<li >Roma</li>
+	</ul>
+	<div class="label">  <a href="#" class="nyroModal" title="3rd Street Promenade">Image</a>  </div>
+</div>
+<div id="map" style="position: fixed; top: 0; bottom: 0; left: 0; right: 0;"></div>
+
+
+  <script type="text/javascript">
+    $(function () {
+      var map;
+        initMap();
+
+      function initMap(center) {
+        map = $("#map").geomap({
+          center: center || [12.3167, 45.4333],
+          zoom: 15,
+          //mode: "drawPoint",
+          mode: "text",
+        shape: function (e, geo) {
+          // the shape event triggers when a user draws a shape
+          // the geo object is a simple GeoJSON object: Point, LineString or Polygon
+          // we can append it directly to the map
+
+          // grab the text of the label input and send it as a label for this shape
+          map.geomap( "append", { type: "Point", coordinates: [12.3167, 45.4333] }, { color: "#00f" }, '<div class="label"> Collosseum </div>' )
+        }
+        }); 
+        map.geomap( "append", { type: "Point", coordinates: [12.3167, 45.4333] }, { color: "#00f" }, '<div class="label"> <a href="img/09.jpg" class="nyroModal" title="3rd Street Promenade">Image</a>  </div>' );     
+      }
+   });
+  </script>
+
+
+
+</body>
+</html>

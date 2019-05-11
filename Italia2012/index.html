@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<head>
+
+<script type='text/javascript'>
+$(document).ready(function() {
+  $("#map").geomap();
+ });
+</script>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+  <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script> -->
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript" src="js/jquery.gomap-1.3.2.js"></script>
+  <script type="text/javascript" src="js/infobox.js"></script>
+  <script type="text/javascript" src="js/customMap.js"></script>
+
+<link rel="stylesheet" href="styles/nyroModal_Custom.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="js/jquery.nyroModal.custom.js"></script>
+<!--[if IE 6]>
+  <script type="text/javascript" src="js/jquery.nyroModal-ie6.min.js"></script>
+<![endif]-->
+
+
+
+
+
+<style type="text/css">
+</style>
+
+</head>
+<body>
+<div id="header" >
+	<ul class="nav">
+		<li class="City" id="veniceLink"><br>VENEZIA</li>
+		<li class="City" id="firenzeLink"><br>FIRENZE</li>
+		<li class="City" id="romaLink"><br>ROMA</li>
+    <li class="City" id="aboutLink"><br>ABOUT</li>
+	</ul>
+</div>
+<div id="map"></div>
+
+ <script type="text/javascript">
+/* $(function() {
+  $('.label a').nyroModal();
+}); */
+ $(function() {
+  $('.nyroModal').nyroModal();
+}); 
+</script>
+<!--
+<a href="#test2" id="imgFiche2" class="nyroModal"  rel="gal"></a>
+<div class="insidemodal" id="test2"> <div class="modalColLeft"><img src="img/381.jpg"></div> <div class="modalColRight"><h2> Back of Dakota's Head</h2><p>Latin Latin Latin Latin Latin Latin</p> </div></div>
+-->
+<a href="#Ven_01" id="SMarc" class="nyroModal"  rel="VenGal"></a>
+<a href="#Ven_02" id="DogePalace" class="nyroModal"  rel="VenGal"></a>
+<a href="#Ven_03" id="Correr" class="nyroModal"  rel="VenGal"></a>
+<a href="#Ven_04" id="BellTower" class="nyroModal"  rel="VenGal"></a>
+<a href="#Ven_05" id="Rialto" class="nyroModal"  rel="VenGal"></a>
+<!-- <a href="#Ven_06" id="AccademiaBridge" class="nyroModal"  rel="VenGal"></a> -->
+
+<a href="#Flor_01" id="AccademiaGallery" class="nyroModal"  rel="FlorGal"></a>
+<a href="#Flor_02" id="Duomo" class="nyroModal"  rel="FlorGal"></a>
+<a href="#Flor_03" id="Baptistry" class="nyroModal"  rel="FlorGal"></a>
+<a href="#Flor_04" id="GiottoCampanile" class="nyroModal"  rel="FlorGal"></a>
+<a href="#Flor_06" id="Bargello" class="nyroModal"  rel="FlorGal"></a>
+<a href="#Flor_07" id="PalazzoVecchio" class="nyroModal"  rel="FlorGal"></a>
+<a href="#Flor_08" id="PonteTrinita" class="nyroModal"  rel="FlorGal"></a>
+<a href="#Flor_09" id="PittiPalace" class="nyroModal"  rel="FlorGal"></a>
+<!-- <a href="#Flor_10" id="MediciChapel" class="nyroModal"  rel="FlorGal"></a> -->
+<a href="#Flor_12" id="SMariaNovella" class="nyroModal"  rel="FlorGal"></a>
+
+<a href="#Rom_01" id="Colosseum" class="nyroModal"  rel="RomGal"></a>
+<a href="#Rom_02" id="TreviFountain" class="nyroModal"  rel="RomGal"></a>
+<a href="#Rom_04" id="SpanishSteps" class="nyroModal"  rel="RomGal"></a>
+<a href="#Rom_05" id="VaticanMuseum" class="nyroModal"  rel="RomGal"></a>
+<a href="#Rom_06" id="BasilicaSPeter" class="nyroModal"  rel="RomGal"></a>
+<a href="#Rom_07" id="NavonaSquare" class="nyroModal"  rel="RomGal"></a>
+
+<a href="#About" id="aboutPage" class="nyroModal"  rel="About"></a>
+
+
+
+<!-- ===== VENICE ===== -->
+
+<div class="insidemodal" id="Ven_01"> <div class="modalColLeft"><img src="img/SMarc.jpg"></div> <div class="modalColRight"><h2> Saint Mark's Basilica </h2><p> Saint Marc's Bascilica was constructed in CE 828 as an extension of the Doge's Palace, in order to house the remains of St. Mark. Having been burned and rebuilt multiple times in its early years, the current structure has had numerous decorations and structural elements added on over the centuries. The architecture is strongly byzantine in nature, despite the surface decorations coming from many sources. There are several important pieces of sculpture that are a part of the Basilica, including a golden mosaic on the interior of the domes, the Greek Horses taken from the Arch of Trajan, and the Tetrarchs, which represent the four emperors of the Roman Empire established by emperor Diocletian. </p> </div></div>
+
+<div class="insidemodal" id="Ven_02"> <div class="modalColLeft"><img src="img/Doge.jpg"></div> <div class="modalColRight"><h2> Doge's Palace </h2><p> The Doge's Palace was the residence of the Doge of Venice, historically the supreme ruler of the city. Much of the palace also served as chambers for the ruling council, and is linked to the city prisons by the "Bridge of Sighs", so named for the prisoners that would sigh at their last glimpse of freedom before imprisonment. The palace also favors Byzantine architecture, though it has been damaged, rebuilt, and remodeled countless times over the centuries. </p> </div></div>
+<div class="insidemodal" id="Ven_03"> <div class="modalColLeft"><img src="img/correr.jpg"></div> <div class="modalColRight"><h2> Correr Museum </h2><p> Occupying the south end of Saint Mark's Square, opposite the basilica and palace, the Correr Museum focuses on the art and history of Venice. It is part of the buildings encompassing Saint Mark's Square, occupying the upper floors, while the lower floors accessible from the square are reserved for shops and businesses. It contains a large collection of coints, art, weapons, and models that detail the history of the city. Like many of the museums in Italy, photography was not permitted inside. </p> </div></div>
+<div class="insidemodal" id="Ven_04"> <div class="modalColLeft"><img src="img/BellTower.jpg"></div> <div class="modalColRight"><h2> St Mark's Campanile </h2><p> The bell tower of St. Mark's Basilica is located near the front of the Basilica and palace. At 323ft. tall, it is an iconic and commanding structure in the city. On its opposing faces, there are carvings of the Lion of St. Mark, and la Giustizia, or Justice, the female representation of Venice. Like many of these ancient structures, it has been seriously rebuilt and repaired more than once. </p> </div></div>
+<div class="insidemodal" id="Ven_05"> <div class="modalColLeft"><img src="img/Rialto.jpg"></div> <div class="modalColRight"><h2> Rialto Bridge </h2><p> The Rialto bridge is one of the four main bridges in Venice, spanning the Grand Canal. Beginning as a simple pontoon bridge, which was later replaced with a wooden bridge and, after its collapse, the current stone bridge. The bridge connected the two large districts of venice, and a large merchant district emerged due to the high traffic in the area.</p> </div></div>
+<!-- <div class="insidemodal" id="Ven_06"> <div class="modalColLeft"><img src="img/accademiaBridge.jpg"></div> <div class="modalColRight"><h2> Dolor Sit Amet </h2><p>The Adventures of Lorem Ipsum</p> </div></div> -->
+
+<!-- ===== FLORENCE ===== -->
+<div class="insidemodal" id="Flor_01"> <div class="modalColLeft"><img src="img/AccademiaGallery.jpg"></div> <div class="modalColRight"><h2> Accademia Gallery </h2><p> Part of the Florentine &quot;Academy of Fine Arts&quot;, this is the home of the original David, among other works by Michelangelo. Previously located in the Piazza della Signoria, it was moved to the gallery to protect it from decay and replaced with a replica. The gallery houses many other works of Florentine artists, including Botticelli and Cellini.</p> </div></div>
+<div class="insidemodal" id="Flor_02"> <div class="modalColLeft"><img src="img/Duomo.jpg"></div> <div class="modalColRight"><h2> Duomo </h2><p> Formally known as the Basilica di Santa Maria del Fiore, this is the main church of Florence, begun in 1296 and completed over a century later. The dome, designed by Filippo Brunelleschi, was once the largest in the world, and is still the largest brick dome ever built. Many tools had to be outright invented to accomplish the construction, and many events including plague served to slow the project. It remains one of the most iconic features of Florence. It is one of three buildings in the Pallazo del Duomo. </p> </div></div>
+<div class="insidemodal" id="Flor_03"> <div class="modalColLeft"><img src="img/Baptistry.jpg"></div> <div class="modalColRight"><h2> Florence Baptistry </h2><p> The Baptistry of St. John, as it is sometimes known, is a minor bascilica in the Pallazo del Duomo, one of the three buildings that composes the Duomo. The most notable features are three sets of bronze doors designed by Lorenzo Ghiberti, one of which is known as the "Gates of Paradise" due to the beauty of the relief sculptures that adorn them. They contain images primarily of the life of Christ in the New Testament. </p> </div></div>
+<div class="insidemodal" id="Flor_04"> <div class="modalColLeft"><img src="img/Giotto.jpg"></div> <div class="modalColRight"><h2> Giotto's Campanile </h2><p> One of the three buildings in the Piazza del Duomo, the bell tower was designed in the Florentine Gothic style by the painter Giotto di Bondone. Adroned with colorful marble like the other two buildings, the towering Campanile still has some unique pieces of art installed in it, including hexagonal panels depicting the history of man. The top three levels were designed by Francesco Talenti, and were constructed in increasingly larger proportions, such that when viewed from below the effect of foreshortening is countered and the top three levels appear exactly the same size. </p> </div></div>
+
+<div class="insidemodal" id="Flor_06"> <div class="modalColLeft"><img src="img/Bargello2.jpg"></div> <div class="modalColRight"><h2> Bargello </h2><p> The Bargello museum is a reconstituted fortress, once the location of the city's military captain in charge of keeping the peace. It now displays a large collection of 14th to 17th century sculptures. This building served as the model for the Palazzo Vecchio. </p> </div></div>
+<div class="insidemodal" id="Flor_07"> <div class="modalColLeft"><img src="img/Vecchio.jpg"></div> <div class="modalColRight"><h2> Palazzo Vecchio </h2><p> This massive building serves as the town hall for Florence, and has served many other purposes in its past, being known at various times as the Palazzo della Signoria and the Palazzo Ducale. Part palace and part fortress, it was designed to safely protect the magistrates in turbulent times. It overlooks the Piazza della Signoria, which contains several replica David statues, among other sculptures.</p> </div></div>
+<div class="insidemodal" id="Flor_08"> <div class="modalColLeft"><img src="img/TrinityBridge.jpg"></div> <div class="modalColRight"><h2> Holy Trinity Bridge </h2><p> The oldest bridge of its kind in the world, the bridge is so named for its proximity to church of Santa Trinita. One of the great bridges in Florence, along with the Ponte Vecchio, it has an iconic appearance. </p> </div></div>
+<div class="insidemodal" id="Flor_09"> <div class="modalColLeft"><img src="img/PittiBoboli.jpg"></div> <div class="modalColRight"><h2> Pitti Palace and Boboli Gardens </h2><p> Originally the residence of a wealthy Florentine banker, this building and the grounds behind it have been converted into a public museum. Originally built to rival the Palazzo Medici, the Medicis later purchased it for their own use. It was at one time used as the Royal palace for a unified Italy.</p> </div></div>
+<!-- <div class="insidemodal" id="Flor_10"> <div class="modalColLeft"><img src="img/MediciChapel.jpg"></div> <div class="modalColRight"><h2> Medici Chapel </h2><p>The Adventures of Lorem Ipsum</p> </div></div> -->
+<div class="insidemodal" id="Flor_12"> <div class="modalColLeft"><img src="img/MariaNovella.jpg"></div> <div class="modalColRight"><h2> Basilica of Saint Maria Novella </h2><p> One of the first great Florentine churches, it is located accross from the main rail station, and is one of the fisrt sights that tourists will pass upon arriving in the city. The square in front of the church was used for chariot races until the late 19th century, with the two obelisks representing the start and finish lines of the race, imitating classical Roman arenas built for the same purpose. The church itself is a classic basilica, designed as a latin cross, and its facade features the Gothic style familiar to that region. </p> </div></div>
+
+<!-- ===== ROME ===== -->
+
+<div class="insidemodal" id="Rom_01"> <div class="modalColLeft"><img src="img/389.jpg" ></div> <div class="modalColRight"><h2> Colosseum</h2><p>Commissioned in CE 72 by Emperor Vespasian, the Roman Colosseum was completed in 80 AD by his son Titus, and later on underwent changes with Emperor Domitian. The Colosseum was built as a place of entertainment, serving the same role as a modern sports stadium. The architecture of the Colosseum features one of the Romans' most important inventions: concrete. The design includes a sequence of arches with all three styles of Greek columns.</p> </div></div>
+<div class="insidemodal" id="Rom_02"> <div class="modalColLeft"><img src="img/Trevi.jpg"></div> <div class="modalColRight"><h2> Trevi Fountain </h2><p> An iconic fountain in Rome, the Trevi Fountain is the largest in the city and features Oceanus, the god of all water, in the center. It is said that throwing a coin into the fountain will ensure a return to Rome. Like many fountains in Rome, it was constructed at the terminal point of an aqueduct. </p> </div></div>
+<div class="insidemodal" id="Rom_04"> <div class="modalColLeft"><img src="img/SpanishSteps2.jpg"></div> <div class="modalColRight"><h2> Spanish Steps </h2><p> These famous 138 steps, and the Trinita dei Monti church, form the Spanish Steps. These are the widest steps in Europe, and upon its construction, linked the Embass and church, under the control of th Bourbons, to the Catholic Holy See below. </p> </div></div>
+<div class="insidemodal" id="Rom_05"> <div class="modalColLeft"><img src="img/Vatican.jpg"></div> <div class="modalColRight"><h2> Vatican Museums </h2><p> A massive, sprawling series of museums in the Vatican featuring the vast collected works of the Roman Catholic church. In addition to the countless paintings and sculptures housed there, the Sistine Chapel is also included in the series of galleries. Works by da Vinci, Raphael, and Caravaggio are peppered throughout. The statue of Laocoon and his Sons was one of the first works to be purchased and put on public display.</p> </div></div>
+<div class="insidemodal" id="Rom_06"> <div class="modalColLeft"><img src="img/StPeterBasilica.jpg"></div> <div class="modalColRight"><h2> Basilica of Saint Peter </h2><p> One of the largest churches in the world, and one of the best known works of renaissance architecture, the basilica supposedly houses the remains of Saint Peter, among those of many others important to the Church. It follows the classic style of the latin cross, with a massive courtyard in front, and contains countless decorations. Originally designed as a byzantine cross by Bramante, the design was taken over by Raphael, and later by Michelangelo. </p> </div></div>
+<div class="insidemodal" id="Rom_07"> <div class="modalColLeft"><img src="img/Navona.jpg"></div> <div class="modalColRight"><h2> Navona Square </h2><p>This square in Rome was built upon the Stadium of Dominitian. Originally a place to observe games, the site eventually gained a number of Baroque architecture and sculpture, including several statues by Bernini. The piazza also houses the 'speaking' statue, where citizens could leave commentary or accusations of others' crimes.</p> </div></div>
+
+<!-- <a href="img/09.jpg" id="imgFiche" class="nyroModal" style="display:none;" title="Titleist" rel="gal">Gallery Img 1</a> -->
+
+<div class="insidemodal" id="About"><div class="modalAbout"><h2> About the Course </h2><p> The 2012 WCU travel course to Italy was intended as an art history course, with an emphasis on immersion in Italian art and culture as a way to enhance education on these topics. The course work was based online for the duration of the semester with more traditional forms of art history education, before a 10 day trip to Venice, Florence, and Rome.  </p></div></div>
+
+</body>
+</html>
